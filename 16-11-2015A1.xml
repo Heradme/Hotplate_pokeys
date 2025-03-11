@@ -1,0 +1,2428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PoBlocks>
+    <Project>
+        <Project_name></Project_name>
+        <Target_device>1</Target_device>
+        <Cycle_time>1</Cycle_time>
+        <Auto_start>true</Auto_start>
+        <Auto_reload_project>false</Auto_reload_project>
+        <Reset_core_on_startup>true</Reset_core_on_startup>
+        <Author></Author>
+        <Disable_division_by_zero_exception>false</Disable_division_by_zero_exception>
+        <Date></Date>
+        <BlocksCount>197</BlocksCount>
+        <LinksCount>209</LinksCount>
+    </Project>
+    <Blocks>
+        <block ID="0" type="582" position="890/1830">
+            <Name>Up/down
+counter 0</Name>
+            <Default_value>100</Default_value>
+            <Retain_on_reset>false</Retain_on_reset>
+            <Initial_value>100</Initial_value>
+        </block>
+        <block ID="1" type="200" position="610/1680">
+            <Name>NOT_0_A</Name>
+        </block>
+        <block ID="2" type="200" position="610/1940">
+            <Name>NOT_0_B</Name>
+        </block>
+        <block ID="3" type="555" position="210/1820">
+            <Name>Clock source_0</Name>
+            <Half_time_m_period>10</Half_time_m_period>
+            <Show_dynamic_input>false</Show_dynamic_input>
+        </block>
+        <block ID="4" type="850" position="2710/1300">
+            <Name>LCD UI</Name>
+            <Use_secondary_pins>false</Use_secondary_pins>
+            <LCD_rows>4</LCD_rows>
+            <LCD_columns>20</LCD_columns>
+            <LCD>
+                <Layout>
+                    <Row Text=" Stop |    C |    s "/>
+                    <Row Text="------| Temp.| Proc."/>
+                    <Row Text="Recipe| setp.| time "/>
+                    <Row Text=" &gt;    |    C |    s "/>
+                    <Variable Format="XXX" BlockID="0" PortID="7" Position="8/3"/>
+                    <Variable Format="XXX" BlockID="40" PortID="2" Position="8/0"/>
+                    <Variable Format="XX" BlockID="52" PortID="7" Position="2/3"/>
+                    <Variable Format="XXX" BlockID="62" PortID="4" Position="15/0"/>
+                    <Variable Format="XXX" BlockID="13" PortID="7" Position="15/3"/>
+                </Layout>
+                <Layout>
+                    <Row Text=" Stop |    C |    s "/>
+                    <Row Text="------| Temp.| Proc."/>
+                    <Row Text="Recipe| setp.| time "/>
+                    <Row Text="      |&gt;   C |    s "/>
+                    <Variable Format="XXX" BlockID="40" PortID="2" Position="8/0"/>
+                    <Variable Format="XXX" BlockID="0" PortID="7" Position="8/3"/>
+                    <Variable Format="XXX" BlockID="13" PortID="7" Position="15/3"/>
+                    <Variable Format="XX" BlockID="52" PortID="7" Position="2/3"/>
+                    <Variable Format="XXX" BlockID="62" PortID="4" Position="15/0"/>
+                </Layout>
+                <Layout>
+                    <Row Text=" Stop |    C |    s "/>
+                    <Row Text="------| Temp.| Proc."/>
+                    <Row Text="Recipe| setp.| time "/>
+                    <Row Text="      |    C |&gt;   s "/>
+                    <Variable Format="XXX" BlockID="40" PortID="2" Position="8/0"/>
+                    <Variable Format="XXX" BlockID="0" PortID="7" Position="8/3"/>
+                    <Variable Format="XXX" BlockID="13" PortID="7" Position="15/3"/>
+                    <Variable Format="XX" BlockID="52" PortID="7" Position="2/3"/>
+                    <Variable Format="XXX" BlockID="62" PortID="4" Position="15/0"/>
+                </Layout>
+                <Layout>
+                    <Row Text=" Stop |    C |    s "/>
+                    <Row Text="------| Temp.| Proc."/>
+                    <Row Text="Recipe| setp.| time "/>
+                    <Row Text="      |    C |   0s "/>
+                    <Variable Format="XXX" BlockID="40" PortID="2" Position="8/0"/>
+                    <Variable Format="XXX" BlockID="62" PortID="4" Position="15/0"/>
+                    <Variable Format="XX" BlockID="52" PortID="7" Position="2/3"/>
+                    <Variable Format="XXX" BlockID="58" PortID="1" Position="8/3"/>
+                    <Variable Format="XX" BlockID="59" PortID="1" Position="15/3"/>
+                </Layout>
+                <Layout>
+                    <Row Text=" St-by|    C |    s "/>
+                    <Row Text="------| Temp.| Proc."/>
+                    <Row Text="Recipe| setp.| time "/>
+                    <Row Text=" &gt;    |    C |    s "/>
+                    <Variable Format="XX" BlockID="52" PortID="7" Position="2/3"/>
+                    <Variable Format="XXX" BlockID="0" PortID="7" Position="8/3"/>
+                    <Variable Format="XXX" BlockID="13" PortID="7" Position="15/3"/>
+                    <Variable Format="XXX" BlockID="40" PortID="2" Position="8/0"/>
+                    <Variable Format="XXX" BlockID="62" PortID="4" Position="15/0"/>
+                </Layout>
+                <Layout>
+                    <Row Text=" St-by|    C |    s "/>
+                    <Row Text="------| Temp.| Proc."/>
+                    <Row Text="Recipe| setp.| time "/>
+                    <Row Text="      |&gt;   C |    s "/>
+                    <Variable Format="XX" BlockID="52" PortID="7" Position="2/3"/>
+                    <Variable Format="XXX" BlockID="0" PortID="7" Position="8/3"/>
+                    <Variable Format="XXX" BlockID="13" PortID="7" Position="15/3"/>
+                    <Variable Format="XXX" BlockID="40" PortID="2" Position="8/0"/>
+                    <Variable Format="XXX" BlockID="62" PortID="4" Position="15/0"/>
+                </Layout>
+                <Layout>
+                    <Row Text=" St-by|    C |    s "/>
+                    <Row Text="------| Temp.| Proc."/>
+                    <Row Text="Recipe| setp.| time "/>
+                    <Row Text="      |    C |&gt;   s "/>
+                    <Variable Format="XX" BlockID="52" PortID="7" Position="2/3"/>
+                    <Variable Format="XXX" BlockID="0" PortID="7" Position="8/3"/>
+                    <Variable Format="XXX" BlockID="13" PortID="7" Position="15/3"/>
+                    <Variable Format="XXX" BlockID="40" PortID="2" Position="8/0"/>
+                    <Variable Format="XXX" BlockID="62" PortID="4" Position="15/0"/>
+                </Layout>
+                <Layout>
+                    <Row Text=" St-by|    C |    s "/>
+                    <Row Text="------| Temp.| Proc."/>
+                    <Row Text="Recipe| setp.| time "/>
+                    <Row Text="      |    C |   0s "/>
+                    <Variable Format="XX" BlockID="52" PortID="7" Position="2/3"/>
+                    <Variable Format="XXX" BlockID="58" PortID="1" Position="8/3"/>
+                    <Variable Format="XX" BlockID="59" PortID="1" Position="15/3"/>
+                    <Variable Format="XXX" BlockID="40" PortID="2" Position="8/0"/>
+                    <Variable Format="XXX" BlockID="62" PortID="4" Position="15/0"/>
+                </Layout>
+                <Layout>
+                    <Row Text=" Heat |    C |    s "/>
+                    <Row Text="------| Temp.| Proc."/>
+                    <Row Text="Recipe| setp.| time "/>
+                    <Row Text="      |    C |    s "/>
+                    <Variable Format="XXX" BlockID="40" PortID="2" Position="8/0"/>
+                    <Variable Format="XXX" BlockID="62" PortID="4" Position="15/0"/>
+                    <Variable Format="XX" BlockID="52" PortID="7" Position="2/3"/>
+                    <Variable Format="XXX" BlockID="0" PortID="7" Position="8/3"/>
+                    <Variable Format="XXX" BlockID="13" PortID="7" Position="15/3"/>
+                </Layout>
+                <Layout>
+                    <Row Text=" Heat |    C |    s "/>
+                    <Row Text="------| Temp.| Proc."/>
+                    <Row Text="Recipe| setp.| time "/>
+                    <Row Text="      |    C |    s "/>
+                    <Variable Format="XXX" BlockID="40" PortID="2" Position="8/0"/>
+                    <Variable Format="XXX" BlockID="62" PortID="4" Position="15/0"/>
+                    <Variable Format="XX" BlockID="52" PortID="7" Position="2/3"/>
+                    <Variable Format="XXX" BlockID="0" PortID="0" Position="8/3"/>
+                    <Variable Format="XXX" BlockID="13" PortID="7" Position="15/3"/>
+                </Layout>
+                <Layout>
+                    <Row Text=" Heat |    C |    s "/>
+                    <Row Text="------| Temp.| Proc."/>
+                    <Row Text="Recipe| setp.| time "/>
+                    <Row Text="      |    C |    s "/>
+                    <Variable Format="XXX" BlockID="40" PortID="2" Position="8/0"/>
+                    <Variable Format="XXX" BlockID="62" PortID="4" Position="15/0"/>
+                    <Variable Format="XX" BlockID="52" PortID="7" Position="2/3"/>
+                    <Variable Format="XXX" BlockID="0" PortID="7" Position="8/3"/>
+                    <Variable Format="XXX" BlockID="13" PortID="7" Position="15/3"/>
+                </Layout>
+                <Layout>
+                    <Row Text=" Heat |    C |    s "/>
+                    <Row Text="------| Temp.| Proc."/>
+                    <Row Text="Recipe| setp.| time "/>
+                    <Row Text="      |    C |   0s "/>
+                    <Variable Format="XXX" BlockID="40" PortID="2" Position="8/0"/>
+                    <Variable Format="XXX" BlockID="62" PortID="4" Position="15/0"/>
+                    <Variable Format="XX" BlockID="52" PortID="7" Position="2/3"/>
+                    <Variable Format="XXX" BlockID="58" PortID="1" Position="8/3"/>
+                    <Variable Format="XX" BlockID="59" PortID="1" Position="15/3"/>
+                </Layout>
+                <Layout>
+                    <Row Text=" Run  |    C |    s "/>
+                    <Row Text="------| Temp.| Proc."/>
+                    <Row Text="Recipe| setp.| time "/>
+                    <Row Text="      |    C |    s "/>
+                    <Variable Format="XXX" BlockID="40" PortID="2" Position="8/0"/>
+                    <Variable Format="XXX" BlockID="62" PortID="4" Position="15/0"/>
+                    <Variable Format="XX" BlockID="52" PortID="7" Position="2/3"/>
+                    <Variable Format="XXX" BlockID="0" PortID="7" Position="8/3"/>
+                    <Variable Format="XXX" BlockID="13" PortID="7" Position="15/3"/>
+                </Layout>
+                <Layout>
+                    <Row Text=" Run  |    C |    s "/>
+                    <Row Text="------| Temp.| Proc."/>
+                    <Row Text="Recipe| setp.| time "/>
+                    <Row Text="      |    C |    s "/>
+                    <Variable Format="XXX" BlockID="40" PortID="2" Position="8/0"/>
+                    <Variable Format="XXX" BlockID="62" PortID="4" Position="15/0"/>
+                    <Variable Format="XX" BlockID="52" PortID="7" Position="2/3"/>
+                    <Variable Format="XXX" BlockID="0" PortID="7" Position="8/3"/>
+                    <Variable Format="XXX" BlockID="13" PortID="7" Position="15/3"/>
+                </Layout>
+                <Layout>
+                    <Row Text=" Run  |    C |    s "/>
+                    <Row Text="------| Temp.| Setp."/>
+                    <Row Text="Recipe| setp.| time "/>
+                    <Row Text="      |    C |    s "/>
+                    <Variable Format="XXX" BlockID="40" PortID="2" Position="8/0"/>
+                    <Variable Format="XXX" BlockID="62" PortID="4" Position="15/0"/>
+                    <Variable Format="XX" BlockID="52" PortID="7" Position="2/3"/>
+                    <Variable Format="XXX" BlockID="0" PortID="7" Position="8/3"/>
+                    <Variable Format="XXX" BlockID="13" PortID="7" Position="15/3"/>
+                </Layout>
+                <Layout>
+                    <Row Text=" Run  |    C |    s "/>
+                    <Row Text="------| Temp.| Proc."/>
+                    <Row Text="Recipe| setp.| time "/>
+                    <Row Text="      |    C |   0s "/>
+                    <Variable Format="XXX" BlockID="40" PortID="2" Position="8/0"/>
+                    <Variable Format="XXX" BlockID="62" PortID="4" Position="15/0"/>
+                    <Variable Format="XX" BlockID="52" PortID="7" Position="2/3"/>
+                    <Variable Format="XXX" BlockID="58" PortID="1" Position="8/3"/>
+                    <Variable Format="XX" BlockID="59" PortID="1" Position="15/3"/>
+                </Layout>
+                <Layout>
+                    <Row Text="-----WARNING!!!-----"/>
+                    <Row Text="  The hotplate is   "/>
+                    <Row Text="    overheated!     "/>
+                    <Row Text="-----WARNING!!!-----"/>
+                </Layout>
+                <Layout>
+                    <Row Text="Development &amp; design"/>
+                    <Row Text="                    "/>
+                    <Row Text="    Herman Adema    "/>
+                    <Row Text="                    "/>
+                </Layout>
+                <Layout>
+                    <Row Text="Version             "/>
+                    <Row Text="                    "/>
+                    <Row Text="    16-11-2015A1    "/>
+                    <Row Text="                    "/>
+                </Layout>
+            </LCD>
+        </block>
+        <block ID="5" type="555" position="2470/1430">
+            <Name>Clock source</Name>
+            <Half_time_m_period>10</Half_time_m_period>
+            <Show_dynamic_input>false</Show_dynamic_input>
+        </block>
+        <block ID="6" type="15" position="-40/10">
+            <Name>HJ</Name>
+            <Sensor_ID>0</Sensor_ID>
+        </block>
+        <block ID="7" type="15" position="670/360">
+            <Name>CJ</Name>
+            <Sensor_ID>2</Sensor_ID>
+        </block>
+        <block ID="8" type="303" position="360/0">
+            <Name>Divide_HJ</Name>
+        </block>
+        <block ID="9" type="303" position="250/80">
+            <Name>Divide_CJ</Name>
+        </block>
+        <block ID="10" type="300" position="600/0">
+            <Name>Sum_HJCJ</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="11" type="302" position="250/0">
+            <Name>Multiply_HJ</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="12" type="200" position="1610/1700">
+            <Name>NOT_2_A</Name>
+        </block>
+        <block ID="13" type="582" position="1820/1850">
+            <Name>Up/down
+counter 2</Name>
+            <Default_value>90</Default_value>
+            <Retain_on_reset>false</Retain_on_reset>
+            <Initial_value>90</Initial_value>
+        </block>
+        <block ID="14" type="200" position="1590/1950">
+            <Name>NOT_2_B</Name>
+        </block>
+        <block ID="15" type="555" position="1240/1830">
+            <Name>Clock source_2</Name>
+            <Half_time_m_period>10</Half_time_m_period>
+            <Show_dynamic_input>false</Show_dynamic_input>
+        </block>
+        <block ID="16" type="602" position="2480/700">
+            <Name>Pulse timer_A</Name>
+        </block>
+        <block ID="17" type="602" position="2470/770">
+            <Name>Pulse timer_B</Name>
+        </block>
+        <block ID="18" type="582" position="2800/760">
+            <Name>Up/down
+counter</Name>
+            <Default_value>0</Default_value>
+            <Retain_on_reset>false</Retain_on_reset>
+            <Initial_value>0</Initial_value>
+        </block>
+        <block ID="19" type="200" position="2490/650">
+            <Name>NOT_A</Name>
+        </block>
+        <block ID="20" type="200" position="2460/860">
+            <Name>NOT_B</Name>
+        </block>
+        <block ID="21" type="201" position="2630/690">
+            <Name>AND_A</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>3</Inputs>
+        </block>
+        <block ID="22" type="201" position="2630/840">
+            <Name>AND_B</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>3</Inputs>
+        </block>
+        <block ID="23" type="206" position="140/1580">
+            <Name>Compare (EQ)_0_A</Name>
+            <Show_negated_output>false</Show_negated_output>
+        </block>
+        <block ID="24" type="206" position="1230/1650">
+            <Name>Compare (EQ)_2_A</Name>
+            <Show_negated_output>false</Show_negated_output>
+        </block>
+        <block ID="25" type="201" position="300/1730">
+            <Name>AND_0_A</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="26" type="201" position="310/1910">
+            <Name>AND_0_B</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="27" type="201" position="1330/1750">
+            <Name>AND_2_A</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="28" type="201" position="1340/1940">
+            <Name>AND_2_B</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="29" type="701" position="1250/20">
+            <Name>PID_A</Name>
+            <K>8</K>
+            <Ti>40</Ti>
+            <Td>0</Td>
+            <Tf>0</Tf>
+            <Out_min>0</Out_min>
+            <Out_max>1000</Out_max>
+        </block>
+        <block ID="30" type="3" position="1580/10">
+            <Name>PWM output_A</Name>
+            <Pin_ID>17</Pin_ID>
+            <PWM_period>125000</PWM_period>
+            <Init_period>true</Init_period>
+            <Duty_range>1000</Duty_range>
+            <Default_duty>0</Default_duty>
+            <Show_enable_input>false</Show_enable_input>
+        </block>
+        <block ID="31" type="962" position="660/1290">
+            <Name>Multiplexer n-1_A</Name>
+            <Inputs>3</Inputs>
+        </block>
+        <block ID="32" type="302" position="1090/50">
+            <Name>Multiply_SP_A</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="33" type="0" position="-40/760">
+            <Name>Enter</Name>
+            <Pin_ID>41</Pin_ID>
+            <Init_function>true</Init_function>
+            <Inverted>true</Inverted>
+        </block>
+        <block ID="34" type="106" position="940/990">
+            <Name>Data latch_2_A</Name>
+            <Default_value>0</Default_value>
+            <Bi_m_directional>false</Bi_m_directional>
+            <Retain_on_reset>false</Retain_on_reset>
+            <Initial_value>0</Initial_value>
+        </block>
+        <block ID="35" type="208" position="150/20">
+            <Name>Compare (LT)</Name>
+            <Show_negated_output>false</Show_negated_output>
+        </block>
+        <block ID="36" type="15" position="560/360">
+            <Name>Light</Name>
+            <Sensor_ID>3</Sensor_ID>
+        </block>
+        <block ID="37" type="15" position="450/360">
+            <Name>Humidity</Name>
+            <Sensor_ID>4</Sensor_ID>
+        </block>
+        <block ID="38" type="15" position="0/80">
+            <Name>Ambient temp</Name>
+            <Sensor_ID>1</Sensor_ID>
+        </block>
+        <block ID="39" type="1100" position="470/0">
+            <Name>Average</Name>
+            <hideInputs>2</hideInputs>
+            <hideOutputs>1</hideOutputs>
+            <hideMemory_bits>0</hideMemory_bits>
+            <hideMemory_int8>2</hideMemory_int8>
+            <hideMemory_int16>0</hideMemory_int16>
+            <hideMemory_int32>2</hideMemory_int32>
+            <hideVariables>mV_in : INPUT(1,int32)
+Loop : INPUT(2,int8)
+
+mV_out : OUTPUT(1,int32)
+
+Count :int8
+mV_tmp : int32
+tmp1 : int32
+tmp2 : int8</hideVariables>
+            <hideCode>LOAD Loop
+STORE tmp2
+CMPEQ DL[0]
+JMPF verhoogcount
+LOAD mV_in
+STORE mV_out
+JMP einde
+
+verhoogcount:
+LOAD Count
+ADD DL[1]
+STORE Count
+CMPGT tmp2
+JMPF verhoogmV
+LOAD DL[0]
+STORE Count
+LOAD mV_tmp
+DIV Loop
+STORE mV_out
+LOAD DL[0]
+STORE mV_tmp
+JMP einde
+
+verhoogmV:
+LOAD mV_tmp
+ADD mV_in
+STORE mV_tmp
+
+einde:</hideCode>
+        </block>
+        <block ID="40" type="303" position="730/170">
+            <Name>HJCJ/10</Name>
+        </block>
+        <block ID="41" type="201" position="1710/1740">
+            <Name>AND_2_E</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="42" type="201" position="1670/1830">
+            <Name>AND_2_F</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="43" type="201" position="720/1720">
+            <Name>AND_0_E</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="44" type="201" position="650/1800">
+            <Name>AND_0_F</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="45" type="301" position="140/80">
+            <Name>CJ-corr</Name>
+        </block>
+        <block ID="46" type="303" position="1460/90">
+            <Name>Output</Name>
+        </block>
+        <block ID="47" type="201" position="-450/1870">
+            <Name>AND_-1_B</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="48" type="201" position="-10/1830">
+            <Name>AND_-1_F</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="49" type="555" position="-510/1770">
+            <Name>Clock source_-1</Name>
+            <Half_time_m_period>100</Half_time_m_period>
+            <Show_dynamic_input>false</Show_dynamic_input>
+        </block>
+        <block ID="50" type="201" position="0/1680">
+            <Name>AND_-1_E</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="51" type="200" position="-110/1640">
+            <Name>NOT_-1_A</Name>
+        </block>
+        <block ID="52" type="582" position="0/1780">
+            <Name>Up/down
+counter -1</Name>
+            <Default_value>0</Default_value>
+            <Retain_on_reset>false</Retain_on_reset>
+            <Initial_value>0</Initial_value>
+        </block>
+        <block ID="53" type="200" position="-110/1900">
+            <Name>NOT_-1_B</Name>
+        </block>
+        <block ID="54" type="201" position="-420/1690">
+            <Name>AND_-1_A</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="55" type="206" position="-670/1540">
+            <Name>Compare (EQ)_-1_A</Name>
+            <Show_negated_output>false</Show_negated_output>
+        </block>
+        <block ID="56" type="204" position="1800/1220">
+            <Name>Compare (GT)</Name>
+            <Show_negated_output>false</Show_negated_output>
+        </block>
+        <block ID="57" type="962" position="2120/1220">
+            <Name>Multiplexer n-1</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="58" type="950" position="300/1290">
+            <Name>Look-up table
+setp</Name>
+            <hideENTRIES>11</hideENTRIES>
+            <hideLUT0>1431326720</hideLUT0>
+            <hideLUT1>2019843930</hideLUT1>
+            <hideLUT2>6599800</hideLUT2>
+            <hideLUT3>0</hideLUT3>
+            <hideLUT4>0</hideLUT4>
+            <hideLUT5>0</hideLUT5>
+            <hideLUT6>0</hideLUT6>
+            <hideLUT7>0</hideLUT7>
+            <hideLUT8>0</hideLUT8>
+            <hideLUT9>0</hideLUT9>
+        </block>
+        <block ID="59" type="950" position="990/1280">
+            <Name>Look-up table proc-time</Name>
+            <hideENTRIES>11</hideENTRIES>
+            <hideLUT0>101254656</hideLUT0>
+            <hideLUT1>101254662</hideLUT1>
+            <hideLUT2>592188</hideLUT2>
+            <hideLUT3>0</hideLUT3>
+            <hideLUT4>0</hideLUT4>
+            <hideLUT5>0</hideLUT5>
+            <hideLUT6>0</hideLUT6>
+            <hideLUT7>0</hideLUT7>
+            <hideLUT8>0</hideLUT8>
+            <hideLUT9>0</hideLUT9>
+        </block>
+        <block ID="60" type="200" position="2340/830">
+            <Name>NOT</Name>
+        </block>
+        <block ID="61" type="1" position="2920/430">
+            <Name>Lifting pins</Name>
+            <Pin_ID>11</Pin_ID>
+            <Init_function>true</Init_function>
+            <Inverted>false</Inverted>
+            <Default_value>false</Default_value>
+            <Set_to_default_on_init>true</Set_to_default_on_init>
+            <Show_enable_input>false</Show_enable_input>
+        </block>
+        <block ID="62" type="580" position="1910/590">
+            <Name>Proces-time</Name>
+            <Default_value>0</Default_value>
+            <Retain_on_reset>false</Retain_on_reset>
+            <Initial_value>0</Initial_value>
+        </block>
+        <block ID="63" type="302" position="1820/1000">
+            <Name>Multiply</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="64" type="106" position="1700/1000">
+            <Name>Data latch_2_A</Name>
+            <Default_value>0</Default_value>
+            <Bi_m_directional>false</Bi_m_directional>
+            <Retain_on_reset>false</Retain_on_reset>
+            <Initial_value>0</Initial_value>
+        </block>
+        <block ID="65" type="200" position="2090/530">
+            <Name>NOT</Name>
+        </block>
+        <block ID="66" type="201" position="1720/530">
+            <Name>AND</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>3</Inputs>
+        </block>
+        <block ID="67" type="555" position="1610/560">
+            <Name>Clock source</Name>
+            <Half_time_m_period>500</Half_time_m_period>
+            <Show_dynamic_input>false</Show_dynamic_input>
+        </block>
+        <block ID="68" type="962" position="1350/1260">
+            <Name>Multiplexer n-1_A</Name>
+            <Inputs>3</Inputs>
+        </block>
+        <block ID="69" type="1000" position="-180/2050">
+            <Name>Comment</Name>
+            <Comment>Programm number</Comment>
+        </block>
+        <block ID="70" type="1000" position="500/2060">
+            <Name>Comment</Name>
+            <Comment>Setpoint</Comment>
+        </block>
+        <block ID="71" type="1000" position="1540/2100">
+            <Name>Comment</Name>
+            <Comment>Proces time</Comment>
+        </block>
+        <block ID="72" type="1000" position="2640/760">
+            <Name>Comment</Name>
+            <Comment>Left-right</Comment>
+        </block>
+        <block ID="73" type="1000" position="300/140">
+            <Name>Comment</Name>
+            <Comment>Measured temperature</Comment>
+        </block>
+        <block ID="74" type="1000" position="1910/670">
+            <Name>Comment</Name>
+            <Comment>Pin down timer</Comment>
+        </block>
+        <block ID="75" type="1" position="2910/250">
+            <Name>Vacuumklep</Name>
+            <Pin_ID>10</Pin_ID>
+            <Init_function>true</Init_function>
+            <Inverted>false</Inverted>
+            <Default_value>false</Default_value>
+            <Set_to_default_on_init>true</Set_to_default_on_init>
+            <Show_enable_input>false</Show_enable_input>
+        </block>
+        <block ID="76" type="206" position="160/1220">
+            <Name>Compare (EQ)</Name>
+            <Show_negated_output>false</Show_negated_output>
+        </block>
+        <block ID="77" type="580" position="120/810">
+            <Name>Up counter enter</Name>
+            <Default_value>0</Default_value>
+            <Retain_on_reset>false</Retain_on_reset>
+            <Initial_value>0</Initial_value>
+        </block>
+        <block ID="78" type="300" position="270/1220">
+            <Name>Sum</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="79" type="302" position="400/1200">
+            <Name>Multiply</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="80" type="302" position="2150/1370">
+            <Name>Multiply</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="81" type="401" position="1930/1400">
+            <Name>From</Name>
+            <Link_ID>30</Link_ID>
+        </block>
+        <block ID="82" type="300" position="2260/1310">
+            <Name>Sum</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="83" type="0" position="0/510">
+            <Name>Up</Name>
+            <Pin_ID>43</Pin_ID>
+            <Init_function>true</Init_function>
+            <Inverted>true</Inverted>
+        </block>
+        <block ID="84" type="0" position="0/420">
+            <Name>Down</Name>
+            <Pin_ID>45</Pin_ID>
+            <Init_function>true</Init_function>
+            <Inverted>true</Inverted>
+        </block>
+        <block ID="85" type="400" position="140/510">
+            <Name>To</Name>
+            <Link_ID>4</Link_ID>
+        </block>
+        <block ID="86" type="400" position="140/420">
+            <Name>To</Name>
+            <Link_ID>3</Link_ID>
+        </block>
+        <block ID="87" type="401" position="-540/1660">
+            <Name>From</Name>
+            <Link_ID>4</Link_ID>
+        </block>
+        <block ID="88" type="401" position="-550/1850">
+            <Name>From</Name>
+            <Link_ID>3</Link_ID>
+        </block>
+        <block ID="89" type="401" position="200/1720">
+            <Name>From</Name>
+            <Link_ID>4</Link_ID>
+        </block>
+        <block ID="90" type="401" position="210/1900">
+            <Name>From</Name>
+            <Link_ID>3</Link_ID>
+        </block>
+        <block ID="91" type="401" position="1240/1740">
+            <Name>From</Name>
+            <Link_ID>4</Link_ID>
+        </block>
+        <block ID="92" type="401" position="1240/1930">
+            <Name>From</Name>
+            <Link_ID>3</Link_ID>
+        </block>
+        <block ID="93" type="0" position="0/220">
+            <Name>Left_A</Name>
+            <Pin_ID>49</Pin_ID>
+            <Init_function>true</Init_function>
+            <Inverted>true</Inverted>
+        </block>
+        <block ID="94" type="0" position="0/310">
+            <Name>Right_A</Name>
+            <Pin_ID>47</Pin_ID>
+            <Init_function>true</Init_function>
+            <Inverted>true</Inverted>
+        </block>
+        <block ID="95" type="400" position="140/310">
+            <Name>To</Name>
+            <Link_ID>2</Link_ID>
+        </block>
+        <block ID="96" type="400" position="140/220">
+            <Name>To</Name>
+            <Link_ID>1</Link_ID>
+        </block>
+        <block ID="97" type="401" position="2380/690">
+            <Name>From</Name>
+            <Link_ID>2</Link_ID>
+        </block>
+        <block ID="98" type="401" position="2370/760">
+            <Name>From</Name>
+            <Link_ID>1</Link_ID>
+        </block>
+        <block ID="99" type="202" position="30/860">
+            <Name>OR</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>4</Inputs>
+        </block>
+        <block ID="100" type="401" position="-180/810">
+            <Name>From</Name>
+            <Link_ID>3</Link_ID>
+        </block>
+        <block ID="101" type="401" position="-180/930">
+            <Name>From</Name>
+            <Link_ID>4</Link_ID>
+        </block>
+        <block ID="102" type="201" position="-80/820">
+            <Name>AND</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="103" type="206" position="320/820">
+            <Name>Compare (EQ)</Name>
+            <Show_negated_output>false</Show_negated_output>
+        </block>
+        <block ID="104" type="201" position="-70/920">
+            <Name>AND</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="105" type="400" position="750/800">
+            <Name>To</Name>
+            <Link_ID>11</Link_ID>
+        </block>
+        <block ID="106" type="201" position="1900/130">
+            <Name>AND</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>3</Inputs>
+        </block>
+        <block ID="107" type="580" position="2090/190">
+            <Name>Overall-time</Name>
+            <Default_value>0</Default_value>
+            <Retain_on_reset>false</Retain_on_reset>
+            <Initial_value>0</Initial_value>
+        </block>
+        <block ID="108" type="555" position="1780/170">
+            <Name>Clock source</Name>
+            <Half_time_m_period>500</Half_time_m_period>
+            <Show_dynamic_input>false</Show_dynamic_input>
+        </block>
+        <block ID="109" type="200" position="2330/170">
+            <Name>NOT</Name>
+        </block>
+        <block ID="110" type="401" position="1590/640">
+            <Name>From</Name>
+            <Link_ID>11</Link_ID>
+        </block>
+        <block ID="111" type="401" position="1790/240">
+            <Name>From</Name>
+            <Link_ID>11</Link_ID>
+        </block>
+        <block ID="112" type="100" position="2470/340">
+            <Name>Set/Reset 
+latch</Name>
+            <Default_value>false</Default_value>
+            <Retain_on_reset>false</Retain_on_reset>
+            <Initial_value>false</Initial_value>
+        </block>
+        <block ID="113" type="401" position="2220/290">
+            <Name>From</Name>
+            <Link_ID>11</Link_ID>
+        </block>
+        <block ID="114" type="602" position="610/810">
+            <Name>Pulse timer</Name>
+        </block>
+        <block ID="115" type="401" position="720/1020">
+            <Name>From</Name>
+            <Link_ID>11</Link_ID>
+        </block>
+        <block ID="116" type="204" position="410/700">
+            <Name>Compare (GT)</Name>
+            <Show_negated_output>false</Show_negated_output>
+        </block>
+        <block ID="117" type="400" position="730/690">
+            <Name>To</Name>
+            <Link_ID>21</Link_ID>
+        </block>
+        <block ID="118" type="401" position="1730/40">
+            <Name>From</Name>
+            <Link_ID>21</Link_ID>
+        </block>
+        <block ID="119" type="100" position="1830/50">
+            <Name>Set/Reset 
+latch</Name>
+            <Default_value>false</Default_value>
+            <Retain_on_reset>false</Retain_on_reset>
+            <Initial_value>false</Initial_value>
+        </block>
+        <block ID="120" type="602" position="520/610">
+            <Name>Pulse timer</Name>
+        </block>
+        <block ID="121" type="206" position="320/610">
+            <Name>Compare (EQ)</Name>
+            <Show_negated_output>false</Show_negated_output>
+        </block>
+        <block ID="122" type="400" position="640/600">
+            <Name>To</Name>
+            <Link_ID>12</Link_ID>
+        </block>
+        <block ID="123" type="600" position="2760/440">
+            <Name>On timer</Name>
+        </block>
+        <block ID="124" type="401" position="2270/400">
+            <Name>From</Name>
+            <Link_ID>12</Link_ID>
+        </block>
+        <block ID="125" type="401" position="1460/1030">
+            <Name>From</Name>
+            <Link_ID>12</Link_ID>
+        </block>
+        <block ID="126" type="602" position="2080/610">
+            <Name>Pulse timer</Name>
+        </block>
+        <block ID="127" type="202" position="2360/320">
+            <Name>OR</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="128" type="400" position="580/1040">
+            <Name>To</Name>
+            <Link_ID>10</Link_ID>
+        </block>
+        <block ID="129" type="602" position="460/1050">
+            <Name>Pulse timer</Name>
+        </block>
+        <block ID="130" type="206" position="260/1050">
+            <Name>Compare (EQ)</Name>
+            <Show_negated_output>false</Show_negated_output>
+        </block>
+        <block ID="131" type="200" position="280/1160">
+            <Name>NOT</Name>
+        </block>
+        <block ID="132" type="202" position="1590/1060">
+            <Name>OR</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="133" type="401" position="1470/1090">
+            <Name>From</Name>
+            <Link_ID>10</Link_ID>
+        </block>
+        <block ID="134" type="202" position="1720/640">
+            <Name>OR</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="135" type="401" position="1580/720">
+            <Name>From</Name>
+            <Link_ID>10</Link_ID>
+        </block>
+        <block ID="136" type="401" position="2220/350">
+            <Name>From</Name>
+            <Link_ID>10</Link_ID>
+        </block>
+        <block ID="137" type="400" position="330/900">
+            <Name>To</Name>
+            <Link_ID>30</Link_ID>
+        </block>
+        <block ID="138" type="302" position="1130/1280">
+            <Name>time multply 10</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="139" type="602" position="2340/240">
+            <Name>Pulse timer</Name>
+        </block>
+        <block ID="140" type="400" position="2450/230">
+            <Name>To</Name>
+            <Link_ID>40</Link_ID>
+        </block>
+        <block ID="141" type="401" position="0/1880">
+            <Name>From</Name>
+            <Link_ID>40</Link_ID>
+        </block>
+        <block ID="142" type="401" position="2610/940">
+            <Name>From</Name>
+            <Link_ID>40</Link_ID>
+        </block>
+        <block ID="143" type="200" position="2620/250">
+            <Name>NOT</Name>
+        </block>
+        <block ID="144" type="1000" position="0/190">
+            <Name>Comment</Name>
+            <Comment>49</Comment>
+        </block>
+        <block ID="145" type="1000" position="0/280">
+            <Name>Comment</Name>
+            <Comment>47</Comment>
+        </block>
+        <block ID="146" type="1000" position="0/390">
+            <Name>Comment</Name>
+            <Comment>45</Comment>
+        </block>
+        <block ID="147" type="1000" position="0/480">
+            <Name>Comment</Name>
+            <Comment>43</Comment>
+        </block>
+        <block ID="148" type="1000" position="-50/730">
+            <Name>Comment</Name>
+            <Comment>41</Comment>
+        </block>
+        <block ID="149" type="962" position="2370/1300">
+            <Name>Multiplexer n-1</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="150" type="962" position="2530/1250">
+            <Name>Multiplexer n-1</Name>
+            <Inputs>4</Inputs>
+        </block>
+        <block ID="151" type="580" position="2330/1170">
+            <Name>Up counter</Name>
+            <Default_value>0</Default_value>
+            <Retain_on_reset>false</Retain_on_reset>
+            <Initial_value>0</Initial_value>
+        </block>
+        <block ID="152" type="200" position="2520/1150">
+            <Name>NOT</Name>
+        </block>
+        <block ID="153" type="201" position="2220/1150">
+            <Name>AND</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="154" type="555" position="2130/1160">
+            <Name>Clock source</Name>
+            <Half_time_m_period>1000</Half_time_m_period>
+            <Show_dynamic_input>false</Show_dynamic_input>
+        </block>
+        <block ID="155" type="400" position="140/600">
+            <Name>To</Name>
+            <Link_ID>6</Link_ID>
+        </block>
+        <block ID="156" type="0" position="0/600">
+            <Name>Klixon</Name>
+            <Pin_ID>4</Pin_ID>
+            <Init_function>true</Init_function>
+            <Inverted>false</Inverted>
+        </block>
+        <block ID="157" type="401" position="2240/1240">
+            <Name>From</Name>
+            <Link_ID>6</Link_ID>
+        </block>
+        <block ID="158" type="100" position="2470/430">
+            <Name>Set/Reset 
+latch</Name>
+            <Default_value>false</Default_value>
+            <Retain_on_reset>false</Retain_on_reset>
+            <Initial_value>false</Initial_value>
+        </block>
+        <block ID="159" type="201" position="2620/440">
+            <Name>AND</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>3</Inputs>
+        </block>
+        <block ID="160" type="401" position="2360/420">
+            <Name>From</Name>
+            <Link_ID>11</Link_ID>
+        </block>
+        <block ID="161" type="400" position="530/510">
+            <Name>To</Name>
+            <Link_ID>22</Link_ID>
+        </block>
+        <block ID="162" type="202" position="2150/1020">
+            <Name>OR</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="163" type="401" position="1990/1000">
+            <Name>From</Name>
+            <Link_ID>22</Link_ID>
+        </block>
+        <block ID="164" type="202" position="-250/870">
+            <Name>OR</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="165" type="401" position="-350/820">
+            <Name>From</Name>
+            <Link_ID>22</Link_ID>
+        </block>
+        <block ID="166" type="1000" position="2910/210">
+            <Name>Comment</Name>
+            <Comment>10</Comment>
+        </block>
+        <block ID="167" type="1000" position="2920/390">
+            <Name>Comment</Name>
+            <Comment>11</Comment>
+        </block>
+        <block ID="168" type="202" position="2720/950">
+            <Name>OR</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="169" type="401" position="2600/1000">
+            <Name>From</Name>
+            <Link_ID>30</Link_ID>
+        </block>
+        <block ID="170" type="202" position="1920/270">
+            <Name>OR</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>3</Inputs>
+        </block>
+        <block ID="171" type="401" position="1790/310">
+            <Name>From</Name>
+            <Link_ID>12</Link_ID>
+        </block>
+        <block ID="172" type="962" position="-190/1720">
+            <Name>Multiplexer n-1_A</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="173" type="600" position="-270/1630">
+            <Name>On timer_-1_A</Name>
+        </block>
+        <block ID="174" type="600" position="-280/1800">
+            <Name>On timer_-1_B</Name>
+        </block>
+        <block ID="175" type="962" position="-180/1850">
+            <Name>Multiplexer n-1_B</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="176" type="600" position="420/1660">
+            <Name>On timer_0_A</Name>
+        </block>
+        <block ID="177" type="962" position="510/1880">
+            <Name>Multiplexer n-0_B</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="178" type="962" position="500/1750">
+            <Name>Multiplexer n-0_A</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="179" type="600" position="410/1830">
+            <Name>On timer_0_B</Name>
+        </block>
+        <block ID="180" type="962" position="1530/1880">
+            <Name>Multiplexer n-2_B</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="181" type="962" position="1520/1750">
+            <Name>Multiplexer n-2_A</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="182" type="600" position="1430/1830">
+            <Name>On timer_-1_B</Name>
+        </block>
+        <block ID="183" type="600" position="1440/1660">
+            <Name>On timer_-1_A</Name>
+        </block>
+        <block ID="184" type="1000" position="0/570">
+            <Name>Comment</Name>
+            <Comment>4</Comment>
+        </block>
+        <block ID="185" type="962" position="530/1190">
+            <Name>Multiplexer n-1_A</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="186" type="401" position="410/1130">
+            <Name>From</Name>
+            <Link_ID>40</Link_ID>
+        </block>
+        <block ID="187" type="600" position="600/1120">
+            <Name>On timer</Name>
+        </block>
+        <block ID="188" type="202" position="830/1030">
+            <Name>OR</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="189" type="401" position="2360/460">
+            <Name>From</Name>
+            <Link_ID>40</Link_ID>
+        </block>
+        <block ID="190" type="202" position="-10/1030">
+            <Name>OR</Name>
+            <Show_negated_output>false</Show_negated_output>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="191" type="401" position="-130/1030">
+            <Name>From</Name>
+            <Link_ID>40</Link_ID>
+        </block>
+        <block ID="192" type="401" position="2360/520">
+            <Name>From</Name>
+            <Link_ID>11</Link_ID>
+        </block>
+        <block ID="193" type="100" position="2480/530">
+            <Name>Set/Reset 
+latch</Name>
+            <Default_value>false</Default_value>
+            <Retain_on_reset>false</Retain_on_reset>
+            <Initial_value>false</Initial_value>
+        </block>
+        <block ID="194" type="400" position="2630/540">
+            <Name>To</Name>
+            <Link_ID>50</Link_ID>
+        </block>
+        <block ID="195" type="300" position="2040/1420">
+            <Name>Sum</Name>
+            <Inputs>2</Inputs>
+        </block>
+        <block ID="196" type="401" position="1930/1440">
+            <Name>From</Name>
+            <Link_ID>50</Link_ID>
+        </block>
+    </Blocks>
+    <Links>
+        <link ID="0">
+            <source type="port" blockID="0" portID="0"/>
+            <destination blockID="1" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="850/1620"/>
+                <anchor ID="1" position="570/1620"/>
+            </anchors>
+        </link>
+        <link ID="1">
+            <source type="port" blockID="0" portID="1"/>
+            <destination blockID="2" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="900/2010"/>
+                <anchor ID="1" position="460/2010"/>
+            </anchors>
+        </link>
+        <link ID="2">
+            <source type="port" blockID="5" portID="0"/>
+            <destination blockID="4" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="3">
+            <source type="port" blockID="9" portID="0"/>
+            <destination blockID="10" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="340/80"/>
+            </anchors>
+        </link>
+        <link ID="4">
+            <source type="port" blockID="11" portID="0"/>
+            <destination blockID="8" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="5">
+            <source type="port" blockID="19" portID="0"/>
+            <destination blockID="21" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="6">
+            <source type="port" blockID="16" portID="0"/>
+            <destination blockID="21" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="7">
+            <source type="port" blockID="21" portID="0"/>
+            <destination blockID="18" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="8">
+            <source type="port" blockID="22" portID="0"/>
+            <destination blockID="18" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="9">
+            <source type="port" blockID="18" portID="0"/>
+            <destination blockID="19" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="2850/610"/>
+                <anchor ID="1" position="2430/610"/>
+            </anchors>
+        </link>
+        <link ID="10">
+            <source type="port" blockID="18" portID="1"/>
+            <destination blockID="20" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="2870/920"/>
+                <anchor ID="1" position="2400/920"/>
+            </anchors>
+        </link>
+        <link ID="11">
+            <source type="port" blockID="24" portID="0"/>
+            <destination blockID="28" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="1190/1760"/>
+                <anchor ID="1" position="1190/1920"/>
+            </anchors>
+        </link>
+        <link ID="12">
+            <source type="link" linkID="11" anchorID="0"/>
+            <destination blockID="27" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="13">
+            <source type="port" blockID="23" portID="0"/>
+            <destination blockID="26" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="150/1740"/>
+                <anchor ID="1" position="170/1920"/>
+            </anchors>
+        </link>
+        <link ID="14">
+            <source type="link" linkID="13" anchorID="0"/>
+            <destination blockID="25" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="15">
+            <source type="port" blockID="18" portID="2"/>
+            <destination blockID="23" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="2780/1250"/>
+                <anchor ID="1" position="2720/1480"/>
+                <anchor ID="2" position="2060/1480"/>
+                <anchor ID="3" position="1830/1480"/>
+                <anchor ID="4" position="1050/1490"/>
+                <anchor ID="5" position="390/1490"/>
+                <anchor ID="6" position="140/1490"/>
+            </anchors>
+        </link>
+        <link ID="16">
+            <source type="port" blockID="10" portID="0"/>
+            <destination blockID="29" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="670/0"/>
+                <anchor ID="1" position="830/0"/>
+                <anchor ID="2" position="870/0"/>
+                <anchor ID="3" position="980/0"/>
+            </anchors>
+        </link>
+        <link ID="17">
+            <source type="port" blockID="29" portID="0"/>
+            <destination blockID="30" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="1350/10"/>
+            </anchors>
+        </link>
+        <link ID="18">
+            <source type="port" blockID="32" portID="0"/>
+            <destination blockID="29" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="19">
+            <source type="port" blockID="34" portID="0"/>
+            <destination blockID="32" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="1030/840"/>
+                <anchor ID="1" position="960/450"/>
+            </anchors>
+        </link>
+        <link ID="20">
+            <source type="port" blockID="31" portID="0"/>
+            <destination blockID="34" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="660/1020"/>
+            </anchors>
+        </link>
+        <link ID="21">
+            <source type="port" blockID="35" portID="0"/>
+            <destination blockID="11" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="22">
+            <source type="link" linkID="16" anchorID="0"/>
+            <destination blockID="40" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="23">
+            <source type="port" blockID="13" portID="0"/>
+            <destination blockID="12" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="1780/1670"/>
+                <anchor ID="1" position="1580/1670"/>
+            </anchors>
+        </link>
+        <link ID="24">
+            <source type="port" blockID="12" portID="0"/>
+            <destination blockID="41" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="25">
+            <source type="port" blockID="42" portID="0"/>
+            <destination blockID="13" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="26">
+            <source type="port" blockID="41" portID="0"/>
+            <destination blockID="13" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="27">
+            <source type="port" blockID="14" portID="0"/>
+            <destination blockID="42" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="28">
+            <source type="port" blockID="13" portID="1"/>
+            <destination blockID="14" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="1850/2000"/>
+                <anchor ID="1" position="1600/2000"/>
+            </anchors>
+        </link>
+        <link ID="29">
+            <source type="port" blockID="43" portID="0"/>
+            <destination blockID="0" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="30">
+            <source type="port" blockID="44" portID="0"/>
+            <destination blockID="0" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="31">
+            <source type="port" blockID="1" portID="0"/>
+            <destination blockID="43" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="32">
+            <source type="port" blockID="2" portID="0"/>
+            <destination blockID="44" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="33">
+            <source type="port" blockID="38" portID="0"/>
+            <destination blockID="45" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="34">
+            <source type="port" blockID="45" portID="0"/>
+            <destination blockID="9" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="35">
+            <source type="port" blockID="6" portID="0"/>
+            <destination blockID="11" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="50/0"/>
+            </anchors>
+        </link>
+        <link ID="36">
+            <source type="link" linkID="35" anchorID="0"/>
+            <destination blockID="35" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="37">
+            <source type="port" blockID="39" portID="0"/>
+            <destination blockID="10" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="38">
+            <source type="port" blockID="8" portID="0"/>
+            <destination blockID="39" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="39">
+            <source type="link" linkID="17" anchorID="0"/>
+            <destination blockID="46" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="40">
+            <source type="port" blockID="52" portID="0"/>
+            <destination blockID="51" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="0/1580"/>
+                <anchor ID="1" position="-150/1580"/>
+            </anchors>
+        </link>
+        <link ID="41">
+            <source type="port" blockID="52" portID="1"/>
+            <destination blockID="53" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="0/1970"/>
+                <anchor ID="1" position="-160/1970"/>
+            </anchors>
+        </link>
+        <link ID="42">
+            <source type="port" blockID="50" portID="0"/>
+            <destination blockID="52" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="43">
+            <source type="port" blockID="48" portID="0"/>
+            <destination blockID="52" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="44">
+            <source type="port" blockID="51" portID="0"/>
+            <destination blockID="50" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="45">
+            <source type="port" blockID="53" portID="0"/>
+            <destination blockID="48" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="46">
+            <source type="port" blockID="55" portID="0"/>
+            <destination blockID="47" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="-610/1710"/>
+                <anchor ID="1" position="-620/1880"/>
+            </anchors>
+        </link>
+        <link ID="47">
+            <source type="link" linkID="46" anchorID="0"/>
+            <destination blockID="54" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="48">
+            <source type="link" linkID="15" anchorID="6"/>
+            <destination blockID="55" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="0/1490"/>
+                <anchor ID="1" position="-190/1490"/>
+                <anchor ID="2" position="-720/1490"/>
+            </anchors>
+        </link>
+        <link ID="49">
+            <source type="port" blockID="52" portID="2"/>
+            <destination blockID="56" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="100/1680"/>
+                <anchor ID="1" position="10/1490"/>
+                <anchor ID="2" position="50/1380"/>
+                <anchor ID="3" position="180/1380"/>
+                <anchor ID="4" position="680/1370"/>
+                <anchor ID="5" position="940/1360"/>
+                <anchor ID="6" position="1610/1350"/>
+            </anchors>
+        </link>
+        <link ID="50">
+            <source type="port" blockID="56" portID="0"/>
+            <destination blockID="57" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="1880/1210"/>
+                <anchor ID="1" position="1910/1210"/>
+            </anchors>
+        </link>
+        <link ID="51">
+            <source type="link" linkID="49" anchorID="3"/>
+            <destination blockID="58" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="52">
+            <source type="port" blockID="20" portID="0"/>
+            <destination blockID="22" portID="2"/>
+            <anchors/>
+        </link>
+        <link ID="53">
+            <source type="port" blockID="17" portID="0"/>
+            <destination blockID="22" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="54">
+            <source type="port" blockID="60" portID="0"/>
+            <destination blockID="21" portID="2"/>
+            <anchors>
+                <anchor ID="0" position="2480/830"/>
+                <anchor ID="1" position="2560/760"/>
+            </anchors>
+        </link>
+        <link ID="55">
+            <source type="link" linkID="54" anchorID="1"/>
+            <destination blockID="22" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="56">
+            <source type="link" linkID="15" anchorID="3"/>
+            <destination blockID="57" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="1870/1270"/>
+            </anchors>
+        </link>
+        <link ID="57">
+            <source type="port" blockID="62" portID="0"/>
+            <destination blockID="65" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="1990/570"/>
+            </anchors>
+        </link>
+        <link ID="58">
+            <source type="port" blockID="65" portID="0"/>
+            <destination blockID="66" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="2140/420"/>
+                <anchor ID="1" position="1390/420"/>
+                <anchor ID="2" position="1390/530"/>
+            </anchors>
+        </link>
+        <link ID="59">
+            <source type="port" blockID="66" portID="0"/>
+            <destination blockID="62" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="60">
+            <source type="port" blockID="63" portID="0"/>
+            <destination blockID="62" portID="2"/>
+            <anchors/>
+        </link>
+        <link ID="61">
+            <source type="port" blockID="64" portID="0"/>
+            <destination blockID="63" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="62">
+            <source type="port" blockID="67" portID="0"/>
+            <destination blockID="66" portID="2"/>
+            <anchors/>
+        </link>
+        <link ID="63">
+            <source type="link" linkID="49" anchorID="5"/>
+            <destination blockID="59" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="64">
+            <source type="port" blockID="68" portID="0"/>
+            <destination blockID="64" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="1370/1000"/>
+            </anchors>
+        </link>
+        <link ID="65">
+            <source type="link" linkID="49" anchorID="2"/>
+            <destination blockID="76" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="66">
+            <source type="port" blockID="76" portID="0"/>
+            <destination blockID="78" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="67">
+            <source type="port" blockID="0" portID="2"/>
+            <destination blockID="31" portID="3"/>
+            <anchors>
+                <anchor ID="0" position="910/1580"/>
+                <anchor ID="1" position="570/1580"/>
+                <anchor ID="2" position="540/1360"/>
+            </anchors>
+        </link>
+        <link ID="68">
+            <source type="port" blockID="13" portID="2"/>
+            <destination blockID="68" portID="3"/>
+            <anchors>
+                <anchor ID="0" position="1870/1510"/>
+                <anchor ID="1" position="1370/1510"/>
+                <anchor ID="2" position="1260/1340"/>
+            </anchors>
+        </link>
+        <link ID="69">
+            <source type="port" blockID="58" portID="0"/>
+            <destination blockID="31" portID="2"/>
+            <anchors/>
+        </link>
+        <link ID="70">
+            <source type="port" blockID="78" portID="0"/>
+            <destination blockID="79" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="71">
+            <source type="port" blockID="57" portID="0"/>
+            <destination blockID="82" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="72">
+            <source type="port" blockID="80" portID="0"/>
+            <destination blockID="82" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="73">
+            <source type="port" blockID="87" portID="0"/>
+            <destination blockID="54" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="74">
+            <source type="port" blockID="88" portID="0"/>
+            <destination blockID="47" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="75">
+            <source type="port" blockID="89" portID="0"/>
+            <destination blockID="25" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="76">
+            <source type="port" blockID="90" portID="0"/>
+            <destination blockID="26" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="77">
+            <source type="port" blockID="92" portID="0"/>
+            <destination blockID="28" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="78">
+            <source type="port" blockID="91" portID="0"/>
+            <destination blockID="27" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="79">
+            <source type="link" linkID="15" anchorID="4"/>
+            <destination blockID="24" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="80">
+            <source type="port" blockID="83" portID="0"/>
+            <destination blockID="85" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="0/510"/>
+            </anchors>
+        </link>
+        <link ID="81">
+            <source type="port" blockID="84" portID="0"/>
+            <destination blockID="86" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="0/420"/>
+            </anchors>
+        </link>
+        <link ID="82">
+            <source type="port" blockID="93" portID="0"/>
+            <destination blockID="96" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="83">
+            <source type="port" blockID="94" portID="0"/>
+            <destination blockID="95" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="84">
+            <source type="port" blockID="97" portID="0"/>
+            <destination blockID="16" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="85">
+            <source type="port" blockID="98" portID="0"/>
+            <destination blockID="17" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="86">
+            <source type="port" blockID="77" portID="0"/>
+            <destination blockID="99" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="180/740"/>
+                <anchor ID="1" position="10/740"/>
+            </anchors>
+        </link>
+        <link ID="87">
+            <source type="port" blockID="99" portID="0"/>
+            <destination blockID="77" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="88">
+            <source type="port" blockID="100" portID="0"/>
+            <destination blockID="102" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="89">
+            <source type="port" blockID="102" portID="0"/>
+            <destination blockID="99" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="90">
+            <source type="port" blockID="104" portID="0"/>
+            <destination blockID="99" portID="2"/>
+            <anchors/>
+        </link>
+        <link ID="91">
+            <source type="port" blockID="101" portID="0"/>
+            <destination blockID="104" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="92">
+            <source type="port" blockID="107" portID="0"/>
+            <destination blockID="109" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="2150/170"/>
+                <anchor ID="1" position="2180/170"/>
+                <anchor ID="2" position="2230/170"/>
+            </anchors>
+        </link>
+        <link ID="93">
+            <source type="port" blockID="109" portID="0"/>
+            <destination blockID="106" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="2320/0"/>
+                <anchor ID="1" position="1710/0"/>
+                <anchor ID="2" position="1690/120"/>
+            </anchors>
+        </link>
+        <link ID="94">
+            <source type="port" blockID="106" portID="0"/>
+            <destination blockID="107" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="95">
+            <source type="port" blockID="108" portID="0"/>
+            <destination blockID="106" portID="2"/>
+            <anchors/>
+        </link>
+        <link ID="96">
+            <source type="port" blockID="77" portID="1"/>
+            <destination blockID="103" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="190/810"/>
+                <anchor ID="1" position="210/810"/>
+                <anchor ID="2" position="230/810"/>
+            </anchors>
+        </link>
+        <link ID="97">
+            <source type="port" blockID="114" portID="0"/>
+            <destination blockID="105" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="98">
+            <source type="link" linkID="96" anchorID="2"/>
+            <destination blockID="116" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="250/810"/>
+            </anchors>
+        </link>
+        <link ID="99">
+            <source type="port" blockID="116" portID="0"/>
+            <destination blockID="117" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="100">
+            <source type="port" blockID="118" portID="0"/>
+            <destination blockID="119" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="101">
+            <source type="port" blockID="119" portID="0"/>
+            <destination blockID="106" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="102">
+            <source type="port" blockID="120" portID="0"/>
+            <destination blockID="122" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="103">
+            <source type="port" blockID="121" portID="0"/>
+            <destination blockID="120" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="400/600"/>
+            </anchors>
+        </link>
+        <link ID="104">
+            <source type="link" linkID="96" anchorID="1"/>
+            <destination blockID="121" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="105">
+            <source type="port" blockID="123" portID="0"/>
+            <destination blockID="61" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="106">
+            <source type="link" linkID="57" anchorID="0"/>
+            <destination blockID="126" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="107">
+            <source type="port" blockID="127" portID="0"/>
+            <destination blockID="112" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="108">
+            <source type="port" blockID="129" portID="0"/>
+            <destination blockID="128" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="109">
+            <source type="port" blockID="130" portID="0"/>
+            <destination blockID="129" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="360/1040"/>
+                <anchor ID="1" position="330/1040"/>
+            </anchors>
+        </link>
+        <link ID="110">
+            <source type="link" linkID="96" anchorID="0"/>
+            <destination blockID="130" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="111">
+            <source type="port" blockID="113" portID="0"/>
+            <destination blockID="127" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="112">
+            <source type="port" blockID="131" portID="0"/>
+            <destination blockID="79" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="113">
+            <source type="link" linkID="109" anchorID="0"/>
+            <destination blockID="131" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="114">
+            <source type="port" blockID="132" portID="0"/>
+            <destination blockID="64" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="115">
+            <source type="port" blockID="125" portID="0"/>
+            <destination blockID="132" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="116">
+            <source type="port" blockID="133" portID="0"/>
+            <destination blockID="132" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="117">
+            <source type="port" blockID="134" portID="0"/>
+            <destination blockID="62" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="118">
+            <source type="port" blockID="110" portID="0"/>
+            <destination blockID="134" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="119">
+            <source type="port" blockID="135" portID="0"/>
+            <destination blockID="134" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="120">
+            <source type="port" blockID="136" portID="0"/>
+            <destination blockID="127" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="121">
+            <source type="link" linkID="98" anchorID="0"/>
+            <destination blockID="137" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="122">
+            <source type="port" blockID="138" portID="0"/>
+            <destination blockID="68" portID="2"/>
+            <anchors/>
+        </link>
+        <link ID="123">
+            <source type="port" blockID="59" portID="0"/>
+            <destination blockID="138" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="124">
+            <source type="link" linkID="92" anchorID="2"/>
+            <destination blockID="139" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="125">
+            <source type="port" blockID="139" portID="0"/>
+            <destination blockID="140" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="126">
+            <source type="port" blockID="141" portID="0"/>
+            <destination blockID="52" portID="3"/>
+            <anchors/>
+        </link>
+        <link ID="127">
+            <source type="port" blockID="82" portID="0"/>
+            <destination blockID="149" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="128">
+            <source type="port" blockID="150" portID="0"/>
+            <destination blockID="4" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="129">
+            <source type="port" blockID="153" portID="0"/>
+            <destination blockID="151" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="130">
+            <source type="port" blockID="152" portID="0"/>
+            <destination blockID="153" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="2590/1120"/>
+                <anchor ID="1" position="2160/1110"/>
+            </anchors>
+        </link>
+        <link ID="131">
+            <source type="port" blockID="154" portID="0"/>
+            <destination blockID="153" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="132">
+            <source type="port" blockID="151" portID="0"/>
+            <destination blockID="152" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="133">
+            <source type="port" blockID="151" portID="1"/>
+            <destination blockID="150" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="134">
+            <source type="port" blockID="149" portID="0"/>
+            <destination blockID="150" portID="4"/>
+            <anchors/>
+        </link>
+        <link ID="135">
+            <source type="port" blockID="156" portID="0"/>
+            <destination blockID="155" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="0/600"/>
+            </anchors>
+        </link>
+        <link ID="136">
+            <source type="port" blockID="157" portID="0"/>
+            <destination blockID="149" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="137">
+            <source type="port" blockID="112" portID="0"/>
+            <destination blockID="159" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="2550/370"/>
+            </anchors>
+        </link>
+        <link ID="138">
+            <source type="port" blockID="159" portID="0"/>
+            <destination blockID="123" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="2680/430"/>
+                <anchor ID="1" position="2730/430"/>
+            </anchors>
+        </link>
+        <link ID="139">
+            <source type="port" blockID="158" portID="0"/>
+            <destination blockID="159" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="140">
+            <source type="port" blockID="160" portID="0"/>
+            <destination blockID="158" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="141">
+            <source type="link" linkID="137" anchorID="0"/>
+            <destination blockID="143" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="142">
+            <source type="link" linkID="103" anchorID="0"/>
+            <destination blockID="161" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="143">
+            <source type="link" linkID="50" anchorID="0"/>
+            <destination blockID="162" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="1930/1040"/>
+            </anchors>
+        </link>
+        <link ID="144">
+            <source type="port" blockID="162" portID="0"/>
+            <destination blockID="60" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="145">
+            <source type="port" blockID="163" portID="0"/>
+            <destination blockID="162" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="146">
+            <source type="port" blockID="103" portID="0"/>
+            <destination blockID="114" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="440/810"/>
+            </anchors>
+        </link>
+        <link ID="147">
+            <source type="port" blockID="164" portID="0"/>
+            <destination blockID="102" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="-140/860"/>
+            </anchors>
+        </link>
+        <link ID="148">
+            <source type="link" linkID="147" anchorID="0"/>
+            <destination blockID="104" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="149">
+            <source type="link" linkID="146" anchorID="0"/>
+            <destination blockID="164" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="480/970"/>
+                <anchor ID="1" position="-230/990"/>
+            </anchors>
+        </link>
+        <link ID="150">
+            <source type="port" blockID="165" portID="0"/>
+            <destination blockID="164" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="151">
+            <source type="port" blockID="143" portID="0"/>
+            <destination blockID="75" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="152">
+            <source type="port" blockID="142" portID="0"/>
+            <destination blockID="168" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="153">
+            <source type="port" blockID="168" portID="0"/>
+            <destination blockID="18" portID="2"/>
+            <anchors/>
+        </link>
+        <link ID="154">
+            <source type="port" blockID="169" portID="0"/>
+            <destination blockID="168" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="155">
+            <source type="port" blockID="170" portID="0"/>
+            <destination blockID="107" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="156">
+            <source type="port" blockID="111" portID="0"/>
+            <destination blockID="170" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="157">
+            <source type="port" blockID="171" portID="0"/>
+            <destination blockID="170" portID="2"/>
+            <anchors/>
+        </link>
+        <link ID="158">
+            <source type="port" blockID="54" portID="0"/>
+            <destination blockID="172" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="-360/1680"/>
+                <anchor ID="1" position="-350/1680"/>
+            </anchors>
+        </link>
+        <link ID="159">
+            <source type="port" blockID="49" portID="0"/>
+            <destination blockID="172" portID="2"/>
+            <anchors>
+                <anchor ID="0" position="-430/1780"/>
+            </anchors>
+        </link>
+        <link ID="160">
+            <source type="port" blockID="172" portID="0"/>
+            <destination blockID="50" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="161">
+            <source type="link" linkID="158" anchorID="0"/>
+            <destination blockID="173" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="162">
+            <source type="port" blockID="173" portID="0"/>
+            <destination blockID="172" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="163">
+            <source type="port" blockID="174" portID="0"/>
+            <destination blockID="175" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="164">
+            <source type="port" blockID="47" portID="0"/>
+            <destination blockID="175" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="-390/1870"/>
+            </anchors>
+        </link>
+        <link ID="165">
+            <source type="link" linkID="159" anchorID="0"/>
+            <destination blockID="175" portID="2"/>
+            <anchors/>
+        </link>
+        <link ID="166">
+            <source type="link" linkID="164" anchorID="0"/>
+            <destination blockID="174" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="167">
+            <source type="port" blockID="175" portID="0"/>
+            <destination blockID="48" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="168">
+            <source type="port" blockID="176" portID="0"/>
+            <destination blockID="178" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="169">
+            <source type="port" blockID="179" portID="0"/>
+            <destination blockID="177" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="170">
+            <source type="port" blockID="178" portID="0"/>
+            <destination blockID="43" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="171">
+            <source type="port" blockID="177" portID="0"/>
+            <destination blockID="44" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="172">
+            <source type="port" blockID="25" portID="0"/>
+            <destination blockID="178" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="360/1720"/>
+            </anchors>
+        </link>
+        <link ID="173">
+            <source type="port" blockID="26" portID="0"/>
+            <destination blockID="177" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="360/1900"/>
+            </anchors>
+        </link>
+        <link ID="174">
+            <source type="link" linkID="172" anchorID="0"/>
+            <destination blockID="176" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="175">
+            <source type="link" linkID="173" anchorID="0"/>
+            <destination blockID="179" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="176">
+            <source type="port" blockID="3" portID="0"/>
+            <destination blockID="178" portID="2"/>
+            <anchors>
+                <anchor ID="0" position="270/1820"/>
+            </anchors>
+        </link>
+        <link ID="177">
+            <source type="link" linkID="176" anchorID="0"/>
+            <destination blockID="177" portID="2"/>
+            <anchors/>
+        </link>
+        <link ID="178">
+            <source type="port" blockID="183" portID="0"/>
+            <destination blockID="181" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="179">
+            <source type="port" blockID="182" portID="0"/>
+            <destination blockID="180" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="180">
+            <source type="port" blockID="181" portID="0"/>
+            <destination blockID="41" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="181">
+            <source type="port" blockID="180" portID="0"/>
+            <destination blockID="42" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="182">
+            <source type="port" blockID="28" portID="0"/>
+            <destination blockID="180" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="1390/1930"/>
+            </anchors>
+        </link>
+        <link ID="183">
+            <source type="port" blockID="27" portID="0"/>
+            <destination blockID="181" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="1380/1740"/>
+            </anchors>
+        </link>
+        <link ID="184">
+            <source type="link" linkID="183" anchorID="0"/>
+            <destination blockID="183" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="185">
+            <source type="link" linkID="182" anchorID="0"/>
+            <destination blockID="182" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="186">
+            <source type="port" blockID="15" portID="0"/>
+            <destination blockID="181" portID="2"/>
+            <anchors>
+                <anchor ID="0" position="1310/1820"/>
+            </anchors>
+        </link>
+        <link ID="187">
+            <source type="link" linkID="186" anchorID="0"/>
+            <destination blockID="180" portID="2"/>
+            <anchors/>
+        </link>
+        <link ID="188">
+            <source type="port" blockID="79" portID="0"/>
+            <destination blockID="185" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="450/1190"/>
+            </anchors>
+        </link>
+        <link ID="189">
+            <source type="port" blockID="185" portID="0"/>
+            <destination blockID="31" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="600/1210"/>
+            </anchors>
+        </link>
+        <link ID="190">
+            <source type="port" blockID="186" portID="0"/>
+            <destination blockID="185" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="470/1140"/>
+            </anchors>
+        </link>
+        <link ID="191">
+            <source type="link" linkID="190" anchorID="0"/>
+            <destination blockID="187" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="192">
+            <source type="port" blockID="188" portID="0"/>
+            <destination blockID="34" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="193">
+            <source type="port" blockID="115" portID="0"/>
+            <destination blockID="188" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="194">
+            <source type="port" blockID="187" portID="0"/>
+            <destination blockID="188" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="195">
+            <source type="port" blockID="33" portID="0"/>
+            <destination blockID="77" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="196">
+            <source type="port" blockID="126" portID="0"/>
+            <destination blockID="190" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="2110/870"/>
+                <anchor ID="1" position="1090/880"/>
+                <anchor ID="2" position="730/890"/>
+                <anchor ID="3" position="510/1010"/>
+                <anchor ID="4" position="110/1010"/>
+                <anchor ID="5" position="-10/1090"/>
+            </anchors>
+        </link>
+        <link ID="197">
+            <source type="link" linkID="196" anchorID="1"/>
+            <destination blockID="170" portID="1"/>
+            <anchors>
+                <anchor ID="0" position="1210/300"/>
+            </anchors>
+        </link>
+        <link ID="198">
+            <source type="port" blockID="190" portID="0"/>
+            <destination blockID="99" portID="3"/>
+            <anchors/>
+        </link>
+        <link ID="199">
+            <source type="port" blockID="191" portID="0"/>
+            <destination blockID="190" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="200">
+            <source type="link" linkID="188" anchorID="0"/>
+            <destination blockID="68" portID="0"/>
+            <anchors>
+                <anchor ID="0" position="500/1240"/>
+            </anchors>
+        </link>
+        <link ID="201">
+            <source type="port" blockID="124" portID="0"/>
+            <destination blockID="112" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="202">
+            <source type="port" blockID="189" portID="0"/>
+            <destination blockID="158" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="203">
+            <source type="port" blockID="192" portID="0"/>
+            <destination blockID="193" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="204">
+            <source type="port" blockID="193" portID="0"/>
+            <destination blockID="159" portID="2"/>
+            <anchors>
+                <anchor ID="0" position="2550/500"/>
+            </anchors>
+        </link>
+        <link ID="205">
+            <source type="link" linkID="204" anchorID="0"/>
+            <destination blockID="194" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="206">
+            <source type="port" blockID="81" portID="0"/>
+            <destination blockID="195" portID="0"/>
+            <anchors/>
+        </link>
+        <link ID="207">
+            <source type="port" blockID="195" portID="0"/>
+            <destination blockID="80" portID="1"/>
+            <anchors/>
+        </link>
+        <link ID="208">
+            <source type="port" blockID="196" portID="0"/>
+            <destination blockID="195" portID="1"/>
+            <anchors/>
+        </link>
+    </Links>
+    <Constants>
+        <constant blockID="0" portID="2" value="0" valueF="0"/>
+        <constant blockID="0" portID="3" value="0" valueF="0"/>
+        <constant blockID="0" portID="4" value="300" valueF="0"/>
+        <constant blockID="8" portID="1" value="400" valueF="0"/>
+        <constant blockID="9" portID="1" value="10" valueF="0"/>
+        <constant blockID="13" portID="2" value="0" valueF="0"/>
+        <constant blockID="13" portID="3" value="0" valueF="0"/>
+        <constant blockID="13" portID="4" value="999" valueF="0"/>
+        <constant blockID="16" portID="1" value="200" valueF="0"/>
+        <constant blockID="17" portID="1" value="200" valueF="0"/>
+        <constant blockID="18" portID="3" value="0" valueF="0"/>
+        <constant blockID="18" portID="4" value="2" valueF="0"/>
+        <constant blockID="23" portID="1" value="1" valueF="0"/>
+        <constant blockID="24" portID="1" value="2" valueF="0"/>
+        <constant blockID="31" portID="1" value="0" valueF="0"/>
+        <constant blockID="32" portID="1" value="10" valueF="0"/>
+        <constant blockID="35" portID="1" value="50000000" valueF="0"/>
+        <constant blockID="39" portID="1" value="70" valueF="0"/>
+        <constant blockID="40" portID="1" value="10" valueF="0"/>
+        <constant blockID="45" portID="1" value="100" valueF="0"/>
+        <constant blockID="46" portID="1" value="10" valueF="0"/>
+        <constant blockID="52" portID="2" value="0" valueF="0"/>
+        <constant blockID="52" portID="4" value="10" valueF="0"/>
+        <constant blockID="55" portID="1" value="0" valueF="0"/>
+        <constant blockID="56" portID="1" value="0" valueF="0"/>
+        <constant blockID="57" portID="2" value="3" valueF="0"/>
+        <constant blockID="63" portID="1" value="1" valueF="0"/>
+        <constant blockID="66" portID="0" value="1" valueF="0"/>
+        <constant blockID="68" portID="1" value="0" valueF="0"/>
+        <constant blockID="76" portID="1" value="0" valueF="0"/>
+        <constant blockID="77" portID="2" value="3" valueF="0"/>
+        <constant blockID="78" portID="1" value="1" valueF="0"/>
+        <constant blockID="80" portID="0" value="4" valueF="0"/>
+        <constant blockID="103" portID="1" value="1" valueF="0"/>
+        <constant blockID="107" portID="2" value="18000" valueF="0"/>
+        <constant blockID="114" portID="1" value="10" valueF="0"/>
+        <constant blockID="116" portID="1" value="0" valueF="0"/>
+        <constant blockID="119" portID="1" value="0" valueF="0"/>
+        <constant blockID="120" portID="1" value="10" valueF="0"/>
+        <constant blockID="121" portID="1" value="2" valueF="0"/>
+        <constant blockID="123" portID="1" value="2000" valueF="0"/>
+        <constant blockID="126" portID="1" value="10" valueF="0"/>
+        <constant blockID="129" portID="1" value="10" valueF="0"/>
+        <constant blockID="130" portID="1" value="0" valueF="0"/>
+        <constant blockID="138" portID="1" value="10" valueF="0"/>
+        <constant blockID="139" portID="1" value="20" valueF="0"/>
+        <constant blockID="149" portID="2" value="16" valueF="0"/>
+        <constant blockID="150" portID="1" value="17" valueF="0"/>
+        <constant blockID="150" portID="2" value="17" valueF="0"/>
+        <constant blockID="150" portID="3" value="18" valueF="0"/>
+        <constant blockID="151" portID="1" value="0" valueF="0"/>
+        <constant blockID="151" portID="2" value="3" valueF="0"/>
+        <constant blockID="173" portID="1" value="500" valueF="0"/>
+        <constant blockID="174" portID="1" value="500" valueF="0"/>
+        <constant blockID="176" portID="1" value="500" valueF="0"/>
+        <constant blockID="179" portID="1" value="500" valueF="0"/>
+        <constant blockID="182" portID="1" value="500" valueF="0"/>
+        <constant blockID="183" portID="1" value="500" valueF="0"/>
+        <constant blockID="185" portID="2" value="1" valueF="0"/>
+        <constant blockID="187" portID="1" value="10" valueF="0"/>
+        <constant blockID="193" portID="1" value="0" valueF="0"/>
+    </Constants>
+    <Shared/>
+</PoBlocks>
